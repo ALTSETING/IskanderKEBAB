@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iskander Kebab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+  <style>
+    body {
+      background: linear-gradient(270deg, #ff4d00, #ffcc00, #ff4d00);
+      background-size: 600% 600%;
+      animation: gradientBG 10s ease infinite;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .glow {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff4d00, 0 0 30px #ff4d00;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="h-screen flex flex-col justify-center items-center text-center">
+    <h1 class="text-6xl font-bold glow mb-4">🔥 ISKANDER KEBAB 🔥</h1>
+    <p class="text-xl mb-6">Найсмачніший кебаб у місті</p>
+    <button class="bg-black px-6 py-3 rounded-2xl text-lg hover:bg-white hover:text-black transition">Замовити зараз</button>
+  </section>
+
+  <!-- MENU -->
+  <section class="p-10">
+    <h2 class="text-4xl text-center mb-10 glow">Меню</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="card bg-black p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl mb-2">Doner Kebab</h3>
+        <p>Соковите м'ясо + соус + овочі</p>
+      </div>
+
+      <div class="card bg-black p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl mb-2">Box Kebab</h3>
+        <p>Картопля + м'ясо + сир</p>
+      </div>
+
+      <div class="card bg-black p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl mb-2">Mega Kebab</h3>
+        <p>Для справжніх голодних 😈</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="p-10 text-center">
+    <h2 class="text-4xl mb-6 glow">Про нас</h2>
+    <p class="max-w-2xl mx-auto">Iskander Kebab — це місце, де смак і якість на першому місці. Ми використовуємо тільки свіжі продукти та робимо кожен кебаб з любов'ю ❤️</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="p-10 text-center">
+    <h2 class="text-4xl mb-6 glow">Контакти</h2>
+    <p>📍 Адреса: Твій город</p>
+    <p>📞 Телефон: +48 XXX XXX XXX</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center p-6 bg-black">
+    <p>© 2026 Iskander Kebab</p>
+  </footer>
+
+</body>
+</html>
